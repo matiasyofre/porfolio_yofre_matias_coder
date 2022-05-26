@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">            
+    <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>El portfolio de Matías</title>
+</head>
+<body class="background">
+    <!-- barra de navegación --> 
+	<nav class="nav">
+        <div class="nav__container container">
+            <div class="nav__bar">
+                <div class="nav__social">
+                    <a href="../index.html" class="nav__link">Home</a>
+                    <a href="../pages/sobre_mi.html" class="nav__link"> < Sobre_mi > </a>
+                    <a href="../pages/proyectos.html" class="nav__link">Proyectos</a>
+                    <a href="../pages/conocimientos.html" class="nav__link">Conocimientos</a>
+                    <a href="#" class="nav__link">[Contacto]</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+	<!-- fin barra de navegacion -->
+    <!-- Cuerpo de la pagina -->
+    <section>
+		<h1>CONTACTO</h1>
+	</section>
+	<!-- formulario de contacto -->
+    <section class="contact container">
+        <figure class="contact__picture">
+            <img src="../assets/web1.jpg" class="contact__img">
+        </figure>
+        <div class="contact__about">
+            <article>
+                <form action="#">
+                    <div>
+                        <label for="email">Nombre: <br>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Apellido: <br>
+                        <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:
+                            <br>
+                            <input type="email" placeholder="hola@hola.com" name="email">
+                            <br>
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Observaciones"> Mensaje de consulta:
+                            <br>
+                            <textarea placeholder="Escribe tu mensaje"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Tipo de proyecto:</p>
+                    <select class="drop_down_list" name="letra" id="letra"> 
+                        <option class="drop_down_list" value="x">Personal</option>
+                        <option class="drop_down_list" value="y">Empresarial</option>
+                        <option class="drop_down_list" value="z">Comercial</option>
+                    </select>
+                    </div>
+                    <br>
+                    <div>Queres suscribirte para recibir futuras comunicaciones?
+                    <input type="checkbox" name="acepta" value="1"></div>
+                    <br>
+                    <input class="button" type="submit" value="Enviar">
+                    <input class="button" type="reset" value="Borrar">
+                </form>
+            </article>
+        </div>
+    </section>
+    <ul class="data">
+        <li>> Córdoba, Argentina</li>
+        <li>> Cel: +549 351 3830203</li>
+        <li>> mati_yofre07@hotmail.com</li>
+        <li><a href="https://www.linkedin.com/in/matías-alexisyofre-623331b2" target="_blank">> Linkedin</a></li>
+        <li><a href="https://github.com/matiasyofre" target="_blank">> Github</a></li>
+    </ul>
+	<!-- cierre de form contacto -->
+	<!-- inicio de footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__contact">
+                <div class="footer__texts">
+                    <h2 class="title">¿Tienes algunda duda?</h2>
+                    <p class="footer__copy">Si tienes alguna duda, puedes conctarme en cualquiera de mis redes sociales</p>
+                </div>
+                <div class="footer__social">
+                    <a href="http://www.github.com" target="_blank" class="footer__link"><i class="fa-brands fa-github" ></i></a>
+                    <a href="http://www.linkedin.com" target="_blank" class="footer__link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://www.whatsapp.com" target="_blank" class="footer__link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://www.instagram.com" target="_blank" class="footer__link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                Creado por &copy; Yofre, Matías :
+            </p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/853c776cdc.js" crossorigin="anonymous"></script> 
+</body>
+</html>
