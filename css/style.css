@@ -23,6 +23,7 @@ body{
 }
 .nav{
     position: relative;
+    background: linear-gradient(to bottom, #22577A, #667eea);
 }
 .nav__bar{
     display: grid;
@@ -53,6 +54,7 @@ footer{
     position: relative;
     --padding-container: 100px 0 50px ;
     color: var(--color-title);
+    background: linear-gradient(to bottom, #22577A, #667eea);
 }
 .footer__contact{
     display: grid;
@@ -117,6 +119,18 @@ footer{
     font-size: 4rem;
     text-align: center;
     color: var(--color-title);
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 .front__texts{
@@ -144,7 +158,27 @@ footer{
     border-radius: 70px;
     opacity: 0.6;
     animation-name: logoAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
 }
+@keyframes logoAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }
 
 /*Estilos Sobre_mi */
 
