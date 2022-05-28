@@ -16,36 +16,27 @@ body{
     background-color:#22577A;
     background-size: 28px 28px;
     background-position: 0 0,14px 14px;
+    width: 100%;
+    height: auto;
 }
 .container{
     width: 100%;
     max-width: var(--max-width-container);
 }
-.nav{
-    position: relative;
-    background: linear-gradient(to bottom, #22577A, #667eea);
+
+.navbar{
+    background: linear-gradient(to top, #22577A, #667eea);
 }
-.nav__bar{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    place-items: end;
-    
-}
-.nav__social{
-    display: flex;
-    flex-wrap: wrap;
-}
-.nav__link{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-title);
-    text-decoration: none;
+.nav-link{
     font-size: 30px;
-    padding-top: 10px;
+    color: var(--text-btn);
+}
+.navbar-brand{
+    font-size: 25px;
+    color: var(--text-btn);
+}
+.navbar-toggler{
+    opacity: 0.4;
 }
 footer{
     color: var(--color-title);
@@ -138,16 +129,18 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-.front__cta{
+.front__texts1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn {
     background: var(--color-btn);
     color: var(--color-primary);
-    padding: var(--padding-btn);
     text-align: center;
     text-decoration: none;
-    border-radius: 20px;
-    width: 120px;
-    margin-top: 10px;
     font-size: 25px;
+    margin-top: 10px;
 }
 .front__cta:hover{
     background-color: #22577A;
@@ -168,17 +161,17 @@ footer{
 }
 @keyframes logoAnimation {
     0% {
-      opacity: 0;
-      transform: translateX(-100px);
+        opacity: 0;
+        transform: translateX(-100px);
     }
     20%,80% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
     100% {
-      opacity: 0;
-      transform: translateX(100px);}
-  }
+        opacity: 0;
+        transform: translateX(100px);}
+}
 
 /*Estilos Sobre_mi */
 
@@ -216,6 +209,12 @@ footer{
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
+}
+
+.card-body{
+    color:#ffffff;
+    font-size: 20px;
+    border-color: #ffffff;
 }
 .card{
     background: var(--color-primary);
@@ -360,6 +359,19 @@ a{
     text-decoration: none;
 }
 
+.acordeon{
+    width: 75%;
+    margin-left: 10px;
+}
+.accordion-body{
+    color: #ffffff;
+    font-size: 20px;
+}
+.accordion-button{
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 25px;
+}
 /* Estilos conocimientos */
 .skills{
     background: var(--color-primary);
@@ -384,16 +396,7 @@ a{
     flex-direction: column;
     align-items: center;
 }
-.skills__img{
-    background: var(--color-primary);
-    margin-top: 30px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .skills__title{
     margin: 20px 0;
     font-size: 1.5rem;
@@ -405,7 +408,14 @@ a{
 .title{
     color: var(--text-btn);
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+}
+.mainSkills{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.progress{
+    width: 75%;
 }
 
 /* Estilos contacto */
@@ -452,6 +462,10 @@ h1{
 }
 .contact__about--left{
     grid-column: 3/-1;
+}
+
+.dropdown-toggle{
+    font-size: 18px;
 }
 .data{
     margin-left: 30px;
@@ -518,6 +532,9 @@ h1{
     }
     .formation__picture--right{
         grid-column: 1/6;
+    }
+    .acordeon{
+        width: 95%;
     }
     .footer__contact{
         grid-template-columns: 1fr;
@@ -620,6 +637,9 @@ h1{
     }
     .formation__picture{
         display: none;
+    }
+    .acordeon{
+        width: 95%;
     }
     .projectsContainer{
         width: 97%;

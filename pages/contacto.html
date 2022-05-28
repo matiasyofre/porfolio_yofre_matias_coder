@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" type="text/css">            
     <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -11,16 +12,30 @@
 </head>
 <body class="background">
     <!-- barra de navegación --> 
-	<nav class="nav">
-        <div class="nav__container container">
-            <div class="nav__bar">
-                <div class="nav__social">
-                    <a href="../index.html" class="nav__link">Home</a>
-                    <a href="../pages/sobre_mi.html" class="nav__link"> < Sobre_mi > </a>
-                    <a href="../pages/proyectos.html" class="nav__link">Proyectos</a>
-                    <a href="../pages/conocimientos.html" class="nav__link">Conocimientos</a>
-                    <a href="#" class="nav__link">[Contacto]</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <p class="navbar-brand">El portafolio de Matías</p>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre_mi.html">< Sobre_mi ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/conocimientos.html">Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">[Contacto]</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -61,20 +76,23 @@
                             <textarea placeholder="Escribe tu mensaje"></textarea>
                         </label>
                     </div>
-                    <div>
-                        <p>Tipo de proyecto:</p>
-                    <select class="drop_down_list" name="letra" id="letra"> 
-                        <option class="drop_down_list" value="x">Personal</option>
-                        <option class="drop_down_list" value="y">Empresarial</option>
-                        <option class="drop_down_list" value="z">Comercial</option>
-                    </select>
+                    <br>
+                    <div class="dropdown btn-sm">
+                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tipo de proyecto
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Personal</a></li>
+                            <li><a class="dropdown-item" href="#">Empresarial</a></li>
+                            <li><a class="dropdown-item" href="#">Comercial</a></li>
+                        </ul>
                     </div>
                     <br>
                     <div>Queres suscribirte para recibir futuras comunicaciones?
                     <input type="checkbox" name="acepta" value="1"></div>
                     <br>
-                    <input class="button" type="submit" value="Enviar">
-                    <input class="button" type="reset" value="Borrar">
+                    <button type="button" class="btn btn-light">Borrar</button>
+                    <button type="button" class="btn btn-light">Enviar</button>
                 </form>
             </article>
         </div>
@@ -83,8 +101,6 @@
         <li>> Córdoba, Argentina</li>
         <li>> Cel: +549 351 3830203</li>
         <li>> mati_yofre07@hotmail.com</li>
-        <li><a href="https://www.linkedin.com/in/matías-alexisyofre-623331b2" target="_blank">> Linkedin</a></li>
-        <li><a href="https://github.com/matiasyofre" target="_blank">> Github</a></li>
     </ul>
 	<!-- cierre de form contacto -->
 	<!-- inicio de footer -->
@@ -107,6 +123,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/853c776cdc.js" crossorigin="anonymous"></script> 
 </body>
 </html>

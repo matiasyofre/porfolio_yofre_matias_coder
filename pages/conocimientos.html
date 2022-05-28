@@ -4,65 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" type="text/css">            
     <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>El portfolio de Matías</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__container container">
-            <div class="nav__bar">
-                <div class="nav__social">
-                    <a href="../index.html" class="nav__link">Home</a>
-                    <a href="../pages/sobre_mi.html" class="nav__link"> < Sobre_mi > </a>
-                    <a href="../pages/proyectos.html" class="nav__link">Proyectos</a>
-                    <a href="#" class="nav__link">Conocimientos</a>
-                    <a href="../pages/contacto.html" class="nav__link">[Contacto]</a>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <p class="navbar-brand">El portafolio de Matías</p>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre_mi.html">< Sobre_mi ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">[Contacto]</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <main class="main">
+    <main class="mainSkills">
         <section class="skills">
             <div class="container">
                 <h2 class="title">Conocimientos & habilidades</h2>
                 <div class="skills__container">
                     <div class="skills__item">
                         <h3 class="skills__title">Frontend</h3>
-                        <div>
-                            <label for="file">HTML5</label>
-                            <div><progress id="file" max="100" value="90"></progress></div>
+                        <h6>HTML5</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
                         </div>
-                        <div><label for="file">CSS3</label>
-                            <div><progress id="file" max="100" value="75"></progress></div>
+                        <br>
+                        <h6>CSS3</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">70%</div>
                         </div>
-                        <div>
-                            <label for="file">Javascript</label>
-                            <div><progress id="file" max="100" value="70"></progress></div>
+                        <br>
+                        <h6>JavaScript</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
                         </div>
-                        <div>
-                            <label for="file">Bootstrap 5</label>
-                            <div><progress id="file" max="100" value="70"></progress></div>
+                        <br>
+                        <h6>Bootstrap 5</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
                         </div>
                     </div>
                     <div class="skills__item">
                         <h3 class="skills__title">Backend</h3>
-                        <div>
-                            <label for="file">NodeJS</label>
-                            <div><progress id="file" max="100" value="85"></progress></div>
+                        <h6>NodeJS</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
                         </div>
-                        <div>
-                            <label for="file">SQL</label>
-                            <div><progress id="file" max="100" value="80"></progress></div>
+                        <br>
+                        <h6>SQL</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
                         </div>
-                        <div>
-                            <label for="file">Apache NIFI</label>
-                            <div><progress id="file" max="100" value="60"></progress></div>
+                        <br>
+                        <h6>Apache NIFI</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
                         </div>
-                        <div>
-                            <label for="file">Apache Kafka</label>
-                            <div><progress id="file" max="100" value="60"></progress></div>
+                        <br>
+                        <h6>Apache Kafka</h6>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
                         </div>
                     </div>
                     <div class="skills__item">
@@ -97,6 +119,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/853c776cdc.js" crossorigin="anonymous"></script>
 </body>
 </html>
