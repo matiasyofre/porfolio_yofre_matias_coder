@@ -1,0 +1,53 @@
+footer{
+    color: $color-title;
+}
+.footer{
+    position: relative;
+    $padding-container: 100px 0 50px ;
+    color: $color-title;
+    background: linear-gradient(to bottom, #22577A, #667eea);
+    &__contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        place-items: center;
+        margin-bottom: 30px;
+        color: $color-title;
+    }
+    &__copy{
+        margin: 20px 0;
+        font-weight: 300;
+    }
+    &__social{
+        display: flex;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        color: $color-title;
+    }
+    &__link{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-title;
+        text-decoration: none;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__copyright{
+        padding-top: 30px;
+        border-top: 2px solid #ffffff;
+        text-align: center;
+    }
+    &__copyright::after{
+        content: " mati_yofre07@hotmail.com";
+    }
+}
+
+[class^="fa-brands"]{
+    font-size: 40px;
+}

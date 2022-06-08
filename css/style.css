@@ -24,7 +24,7 @@ body{
     max-width: var(--max-width-container);
 }
 
-.navbar{
+/* .navbar{
     background: linear-gradient(to top, #22577A, #667eea);
 }
 .nav-link{
@@ -37,11 +37,11 @@ body{
 }
 .navbar-toggler{
     opacity: 0.4;
-}
-footer{
+} */
+/* footer{
     color: var(--color-title);
-}
-.footer{
+} */
+/* .footer{
     position: relative;
     --padding-container: 100px 0 50px ;
     color: var(--color-title);
@@ -89,11 +89,11 @@ footer{
 }
 .footer__copyright::after{
     content: " mati_yofre07@hotmail.com";
-}
+} */
 
 /*Estilos Home*/
 
-.front{
+/* .front{
     height: 100vh;
     min-height: 500px;
     position: relative;
@@ -171,7 +171,7 @@ footer{
     100% {
         opacity: 0;
         transform: translateX(100px);}
-}
+} */
 
 /*Estilos Sobre_mi */
 

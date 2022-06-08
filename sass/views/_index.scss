@@ -1,0 +1,58 @@
+.front{
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    $padding-container: 0;
+    &__container{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 3fr 2fr;
+        place-items: center;
+        gap: 20px;
+    }
+    &__title{
+        font-size: 4rem;
+        text-align: center;
+        color: $color-title;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    &__texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__texts1{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__cta:hover{
+        background-color: #22577A;
+        color: #57CC99;
+    }
+    &__img{
+        width: 95%;
+        border-radius: 70px;
+        opacity: 0.6;
+        animation-name: logoAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: initial;
+    }
+}
+
+.btn {
+    background: $color-btn;
+    color: $color-primary;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+

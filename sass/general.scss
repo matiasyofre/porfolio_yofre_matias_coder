@@ -1,0 +1,18 @@
+// Mics
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/media_queries';
+@import './misc/animations';
+
+// Partials
+@import './partials/header';
+@import './partials/footer';
+
+// Views
+
+@import './views/index';
+@import './views/sobre_mi';
+@import './views/proyectos';
+@import './views/conocimientos';
+@import './views/contacto';
