@@ -24,8 +24,7 @@
     }
     &__texts1{
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(space-evenly);
     }
     &__cta:hover{
         background-color: #22577A;
@@ -47,10 +46,18 @@
 }
 
 .btn {
-    background: $color-btn;
-    color: $color-primary;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
     margin-top: 10px;
+}
+
+.btn--sobre{
+    @extend .btn;
+    background-color: yellow;
+}
+
+.btn--proyecto{
+    @extend .btn;
+    background-color: aqua;
 }

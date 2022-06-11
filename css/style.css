@@ -1,3 +1,15 @@
+.github {
+  color: grey; }
+
+.linkedin {
+  color: blue; }
+
+.whatsapp {
+  color: #09ff00; }
+
+.instagram {
+  color: #C13584; }
+
 body {
   font-family: "Marvel", sans-serif;
   background-color: #22577A;
@@ -63,8 +75,7 @@ footer {
   .footer__social {
     display: flex;
     padding-top: 30px;
-    flex-wrap: wrap;
-    color: white; }
+    flex-wrap: wrap; }
   .footer__link {
     width: 60px;
     height: 60px;
@@ -83,6 +94,18 @@ footer {
     text-align: center; }
   .footer__copyright::after {
     content: " mati_yofre07@hotmail.com"; }
+
+.fa-github {
+  color: grey; }
+
+.fa-linkedin {
+  color: blue; }
+
+.fa-whatsapp {
+  color: #09ff00; }
+
+.fa-instagram {
+  color: #C13584; }
 
 [class^="fa-brands"] {
   font-size: 40px; }
@@ -127,13 +150,17 @@ footer {
     animation-fill-mode: forwards;
     animation-play-state: initial; }
 
-.btn {
-  background: #C7F9CC;
-  color: #22577A;
+.btn, .btn--sobre, .btn--proyecto {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   margin-top: 10px; }
+
+.btn--sobre {
+  background-color: yellow; }
+
+.btn--proyecto {
+  background-color: aqua; }
 
 .about_me {
   text-align: center;
@@ -170,7 +197,7 @@ footer {
   border-color: #ffffff; }
 
 .card {
-  background: var(--color-primary);
+  background: #22577A;
   margin-bottom: 15px; }
   .card__copy {
     margin-top: 20px; }
@@ -567,4 +594,4 @@ h1 {
     .form {
       width: 100%;
     }
-  }
+  } 

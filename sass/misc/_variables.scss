@@ -8,3 +8,16 @@ $max-width-container: 1440px;
 $color-btn: #C7F9CC;
 $padding-btn: 20px 35px;
 $height-shape:18em;
+
+
+$social_media:(
+    github: grey,
+    linkedin: blue,
+    whatsapp: #09ff00,
+    instagram: #C13584,    
+);
+@each $link, $color in $social_media{
+    .#{$link}{
+        color: #{$color};
+    }
+}

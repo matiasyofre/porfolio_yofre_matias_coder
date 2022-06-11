@@ -40,7 +40,7 @@
     border-color: #ffffff;
 }
 .card{
-    background: var(--color-primary);
+    background: $color-primary;
     margin-bottom: 15px;
     &__copy{
         margin-top: 20px;

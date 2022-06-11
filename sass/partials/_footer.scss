@@ -22,7 +22,6 @@ footer{
         display: flex;
         padding-top: 30px;
         flex-wrap: wrap;
-        color: $color-title;
     }
     &__link{
         width: 60px;
@@ -46,6 +45,18 @@ footer{
     &__copyright::after{
         content: " mati_yofre07@hotmail.com";
     }
+}
+.fa-github{
+    color: map-get($social_media, github);
+}
+.fa-linkedin{
+    color: map-get($social_media, linkedin);
+}
+.fa-whatsapp{
+    color: map-get($social_media, whatsapp);
+}
+.fa-instagram{
+    color: map-get($social_media, instagram);
 }
 
 [class^="fa-brands"]{
