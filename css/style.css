@@ -110,8 +110,8 @@ footer {
   font-size: 40px; }
 
 .front {
-  height: 100vh;
-  min-height: 500px;
+  /* height: 100vh; */
+  /* min-height: 500px; */
   position: relative; }
   .front__container {
     display: grid;
