@@ -110,6 +110,7 @@ footer {
   font-size: 40px; }
 
 .front {
+  padding-bottom: 30px;
   position: relative; }
   .front__container {
     display: grid;
