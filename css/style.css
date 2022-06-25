@@ -110,8 +110,6 @@ footer {
   font-size: 40px; }
 
 .front {
-  /* height: 100vh; */
-  /* min-height: 500px; */
   position: relative; }
   .front__container {
     display: grid;
@@ -361,7 +359,7 @@ a {
   font-size: 40px; }
 
 .mainSkills {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 200px; }
 
 .progress {
