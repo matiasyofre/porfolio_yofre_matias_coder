@@ -221,7 +221,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px; }
+    font-size: 20px; }
   .card__img {
     background: #22577A;
     margin-top: 30px;
