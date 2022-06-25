@@ -74,7 +74,6 @@ footer {
     font-weight: 300; }
   .footer__social {
     display: flex;
-    padding-top: 30px;
     flex-wrap: wrap; }
   .footer__link {
     width: 60px;
