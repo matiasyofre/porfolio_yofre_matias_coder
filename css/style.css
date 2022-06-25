@@ -110,7 +110,7 @@ footer {
   font-size: 40px; }
 
 .front {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   position: relative; }
   .front__container {
     display: grid;
@@ -148,6 +148,7 @@ footer {
     animation-fill-mode: forwards;
     animation-play-state: initial; }
 
+    
 .btn, .btn--sobre, .btn--proyecto {
   text-align: center;
   text-decoration: none;
@@ -274,6 +275,9 @@ footer {
   .formation__about--left {
     grid-column: 3/-1; }
 
+.main{
+  padding-bottom: 20px;
+}
 .projectsContainer {
   width: 99%;
   margin: 0 auto;
@@ -295,7 +299,8 @@ footer {
   padding-top: 5%; }
 
 .galleryItem {
-  position: relative; }
+  position: relative;
+  margin: 2px; }
 
 .galleryImg {
   width: 100%;
