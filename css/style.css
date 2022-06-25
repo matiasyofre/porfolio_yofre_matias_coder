@@ -581,6 +581,9 @@ h1 {
         "projects5"
         "projects6";
     }
+    .main{
+      padding-bottom: 20px;
+    }
     .skills__container{
         width: 97%;
         grid-template-columns: 1fr;
