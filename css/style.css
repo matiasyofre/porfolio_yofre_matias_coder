@@ -427,7 +427,6 @@ h1 {
         height: auto;
     }
     .front__container{
-        padding: 20px 0;
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
     }
