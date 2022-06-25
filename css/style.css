@@ -235,7 +235,7 @@ footer {
     margin: 20px 0;
     font-size: 1.5rem; }
   .card__paragraph {
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 20px; }
   .card__item:nth-last-of-type(1) {
     grid-area: card1; }
@@ -366,7 +366,8 @@ a {
   margin-bottom: 200px; }
 
 .progress {
-  width: 75%; }
+  width: 75%;
+  height: 25px; }
 
 h1 {
   color: #fff;
@@ -427,7 +428,7 @@ h1 {
         height: auto;
     }
     .front__container{
-        padding: 60px 0;
+        padding: 20px 0;
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
     }
