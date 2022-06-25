@@ -423,7 +423,7 @@ h1 {
         line-height-step:14em;
     }
     .front{
-        min-height: 100vh;
+        /* min-height: 100vh; */
         height: auto;
     }
     .front__container{
